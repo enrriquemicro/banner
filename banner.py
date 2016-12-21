@@ -3,6 +3,7 @@
 		#QtGui.QMainWindow.__init__(self, parent)
 		#self.publi.clicked.connect(self.publi_clicked)
 	#def publi_clicked(self):
+	def publicidad(self):
 		# Insertar texto en QLabel
 		self.ver.setText("hola")
 		# Insertar archivo desde url
