@@ -1,13 +1,5 @@
-import re
-import mechanize
-
-
-br = mechanize.Browser(factory=mechanize.RobustFactory())
-url='http://www.ugelcajamarca.gob.pe/institucional/directorio'
-
-r = br.open(url)
-respuesta1=br.response().read()
-mailsrch = re.compile(r'[\w\-][\w\-\.]+@[\w\-][\w\-\.]+[a-zA-Z]{1,4}')
-
-xd = mailsrch.findall(respuesta1)
-print ''.join(xd)
+	def publi_clicked(self):
+		# Insertar texto en QLabel
+		self.ver.setText("hola")
+		# Insertar archivo desde url
+		self.vista.load(QUrl('https://github.com/enrriquemicro/banner/blob/master/banner2.png?raw=true'))
